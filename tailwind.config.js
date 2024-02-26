@@ -4,14 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        physical: '#C37446',
-        elemental: '#45gsd',
+        physical: '#bd8868',
+        elemental: '#4dfbbd',
         nature: '#85CC52',
         frost: '#7DE9FF',
         arcane: '#2157EC',
         fire: '#F38135',
         shadow: '#721ABF',
-        holy: '#E1CA4B'
+        holy: '#E1CA4B',
+        volcanic: '#f2fd6c',
+        shadowflame: '#f55a1c',
+        flamestrike: '#c9723e'
       }
     },
   },

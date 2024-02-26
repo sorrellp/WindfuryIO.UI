@@ -1,24 +1,21 @@
 <script lang="ts">
 	import * as Chart from 'chart.js';
 	import ChartJS from 'chart.js/auto';
+	import { onMount } from 'svelte';
 
-	export let data;
+	export let data: any;
+	export let options: any;
+	export let classes: string;
 
-	new ChartJS('myChart', {
-		type: 'radar',
-		data: data,
-		options: {
-			plugins: {
-				legend: {
-					display: false
-				}
-			},
-			responsive: true,
-			maintainAspectRatio: false
-		}
+	onMount(async () => {
+		new ChartJS('myChart', {
+			type: 'radar',
+			data: data,
+			options: options
+		});
 	});
 </script>
 
-<div style="position: relative; height:40vh; width:40vw" class="card bg-neutral">
+<div class={classes}>
 	<canvas id="myChart"></canvas>
 </div>

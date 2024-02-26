@@ -31,7 +31,7 @@
 </script>
 
 <table class="table-auto table-zebra {tableStyles}">
-	<thead>
+	<thead class="text-left">
 		<tr class="noselect">
 			<th>Name</th>
 			<th on:click={() => sortDamage()}>Damage</th>
