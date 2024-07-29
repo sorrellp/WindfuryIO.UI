@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="hero xl:max-w-[1440px] min-h-96 bg-[radial-gradient(circle,rgba(0,0,0,0),rgb(29,35,42,1)_95%),url({backgroundImage})] [text-shadow:_0_0_50px_rgb(0_0_0)] relative"
+	class="hero xl:max-w-[1440px] min-h-96 bg-img [text-shadow:_0_0_50px_rgb(0_0_0)] relative"
 >
 	<div class="hero-content text-center text-primary w-full">
 		<h1>GNARLROOT</h1>
@@ -15,3 +15,9 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.bg-img {
+		background-image: radial-gradient(circle,rgba(0,0,0,0),rgb(29,35,42,1) 95%),url('$lib/assets/gnarlroot.jpg');
+	}
+</style>

@@ -1,3 +1,5 @@
+import image from '$lib/assets/gnarlroot.jpg';
+
 export const ColorMappings: { [key: number]: string } = {
     1: 'text-physical',
     2: '',
@@ -27,3 +29,7 @@ export const BackgroundColorMappings: { [key: number]: string } = {
     36: 'bg-gradient-to-r from-shadow to-fire to-80%',
     37: 'bg-gradient-to-r from-shadow to-fire to-80%'
 };
+
+export const RaidList: { [key: string]: Set<string> } = {
+    'amirdrassil': new Set(['gnarlroot'])
+}

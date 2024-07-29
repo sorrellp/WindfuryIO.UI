@@ -6,6 +6,7 @@
 	import daisyuiColors from 'daisyui/src/theming/themes';
 	import Hero from '$lib/components/Hero.svelte';
 	import { page } from '$app/stores';
+	import type { ParamMatcher } from '@sveltejs/kit';
 
 	function sort_object(obj: { [Name: string]: Damage }): { [Name: string]: Damage } {
 		let sortableArray = Object.entries(obj);
@@ -69,7 +70,7 @@
 
 {#if $averagedOutput?.AveragedDamage !== undefined}
 	<div class="flex flex-col items-center flex-1 my-5">
-		<Hero backgroundImage={`/${$page.params.boss}.jpg`} />
+		<Hero backgroundImage={`/${$page.params.slugs.split('/')[1]}.jpg`} />
 		<div class="card card-compact bg-neutral flex flex-col md:flex-row gap-5 xl:max-w-[1440px] w-full p-5">
 
 				<div class="card-body bg-base-100 rounded-2xl">
